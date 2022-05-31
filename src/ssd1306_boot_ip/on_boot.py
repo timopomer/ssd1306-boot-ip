@@ -2,6 +2,7 @@ import time
 import board
 import busio
 import adafruit_ssd1306
+import socket
 from PIL import Image, ImageDraw, ImageFont
 
 WIDTH = 128
@@ -16,7 +17,9 @@ def main():
     font = ImageFont.load_default()
 
     while True:
-        text = "Hello World!"
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(("8.8.8.8", 80))
+        text=s.getsockname()[0]
         (font_width, font_height) = font.getsize(text)
         image = Image.new("1", (oled.width, oled.height))
         draw = ImageDraw.Draw(image)
