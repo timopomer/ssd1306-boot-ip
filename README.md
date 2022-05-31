@@ -1,2 +1,2 @@
-# ssd1306-boot-ip
-Show the raspberry PI's wlan IP on boot
+# mlx90614-prometheus
+mlx90614 sensor i2c Prometheus agent
