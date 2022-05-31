@@ -12,3 +12,4 @@ services:
       - /sys:/sys
       - /dev:/dev
     privileged: true
+    network_mode: "host"
