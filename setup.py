@@ -21,7 +21,9 @@ setuptools.setup(
     install_requires=[
         'smbus2==0.4.1',
 	'adafruit-circuitpython-ssd1306==2.12.4',
-	'Pillow==9.1.1'
+	'Pillow==9.1.1',
+        'RPi.GPIO==0.7.1'
+
     ],
     entry_points={
         'console_scripts': ['show-ssd1306-boot-ip=ssd1306_boot_ip.on_boot:main'],
