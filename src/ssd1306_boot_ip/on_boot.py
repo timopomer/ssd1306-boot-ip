@@ -10,7 +10,7 @@ BORDER = 5
 
 def main():
     i2c = busio.I2C(board.SCL, board.SDA)
-    oled = adafruit_ssd1306.SSD1306_I2C(WIDTH, HEIGHT, i2c, addr=0x3C, reset=oled_reset)
+    oled = adafruit_ssd1306.SSD1306_I2C(WIDTH, HEIGHT, i2c, addr=0x3C)
     oled.fill(0)
     oled.show()
     font = ImageFont.load_default()
