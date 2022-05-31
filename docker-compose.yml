@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  ssd1206-boot-ip:
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    image: ghcr.io/timopomer/ssd1306-boot-ip:0.0.1
+    restart: always
+    container_name: ssd1306-boot-ip
+    volumes:
+      - /sys:/sys
+      - /dev:/dev
+    privileged: true
