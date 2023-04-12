@@ -1,2 +1,3 @@
-# mlx90614-prometheus
-mlx90614 sensor i2c Prometheus agent
+# ssd1306-boot-ip
+
+Show IP of microcontroller (like raspberry pi) on SSD1306 on boot
